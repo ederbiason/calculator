@@ -1,0 +1,17 @@
+ion-button {
+    /* --border-radius: 100%; */
+    height:100%
+} 
+ 
+ion-grid {
+    max-height: 100%;
+    height: 100%;
+ }
+ 
+#textArea {
+    height: 28.57%;
+}
+ 
+ion-row {
+    height: 14.285%;
+}
