@@ -1,5 +1,7 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonCard, IonContent, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
+import Button from '../components/Button';
+
+import { buttons } from '../utils/ButtonsValues';
 
 const Tab2: React.FC = () => {
   return (
@@ -9,13 +11,21 @@ const Tab2: React.FC = () => {
           <IonTitle>Tab 2</IonTitle>
         </IonToolbar>
       </IonHeader>
+
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 2 page" />
+        <IonCard id="textArea">
+          Text
+        </IonCard>
+
+        <IonGrid>
+          {buttons.map((button, index) => (
+            <IonRow key={index}>
+              {button.numbers.map((number) => (
+                <Button key={number.value} value={number.value} special={number.special} />
+              ))}
+            </IonRow>
+          ))}
+        </IonGrid>
       </IonContent>
     </IonPage>
   );

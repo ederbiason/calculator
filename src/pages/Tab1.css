@@ -1,6 +1,6 @@
 ion-button {
     /* --border-radius: 100%; */
-    height:100%
+    height: 100%;
 } 
  
 ion-grid {
@@ -9,7 +9,7 @@ ion-grid {
  }
  
 #textArea {
-    height: 28.57%;
+    height: 22.57%;
 }
  
 ion-row {
