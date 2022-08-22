@@ -1,6 +1,8 @@
 import { IonCard, IonContent, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
 import Button from '../components/Button';
 
+import './Tab2.css'
+
 import { buttons } from '../utils/ButtonsValues';
 
 const Tab2: React.FC = () => {
@@ -8,13 +10,13 @@ const Tab2: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
+          <IonTitle>Calculator</IonTitle>
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
+      <IonContent >
         <IonCard id="textArea">
-          Text
+          <p>Text</p>
         </IonCard>
 
         <IonGrid>
